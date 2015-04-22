@@ -1,7 +1,14 @@
 * Trabajo Practico #1
 ** Resolucion de sistemas de ecuaciones lineales por metodos iterativos
+   Para n=5 y RTOL=0.00001, haciendo un barrido desde w=0 a w=2 con
+   paso=0.1, obtuvimos que el w optimo esta en el intervalo [0.5,
+   0.7]. Tenemos que refinar el paso de w en ese intervalo para
+   conseguir una mejor aproximacion al valor optimo.
 
+   Luego tenemos que hacer el grafico (podria ser con la tabla que
+   devuelve el algoritmo) que relaciona el w con la cantidad de iteraciones.
 
-** TODO ver como hacer el ploteo
+   
+*** TODO ver como hacer el ploteo
+*** TODO ver como guardar info en un archivo
 
-** TODO ver como guardar info en un archivo
