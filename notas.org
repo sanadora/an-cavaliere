@@ -1,0 +1,7 @@
+* Trabajo Practico #1
+** Resolucion de sistemas de ecuaciones lineales por metodos iterativos
+
+
+** TODO ver como hacer el ploteo
+
+** TODO ver como guardar info en un archivo
