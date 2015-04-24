@@ -1,12 +1,12 @@
-function result = calcular(n, RTOL)
+function result = calcular_tabla(n, RTOL)
 	A = hilb(n);
 	b = zeros(n,1);
 	for i = 1:n;
 		b(i) = sum(A(i,:));
 	endfor
 
-	result = zeros(20,2);
-	w = 0;
+	result = zeros(10,2);
+	w = 1;
 	i = 1;
 	do
 		[x, iter] = sor(A, b, w, RTOL);

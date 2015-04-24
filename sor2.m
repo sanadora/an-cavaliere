@@ -13,12 +13,10 @@ function [x, iter] = sor(A, b, w, RTOL)
 	       endfor
 	       x(i) = (1 - w) * x(i) + (w/A(i,i)) * (b(i) - sum);
 	   endfor
-	   abs_error = norm(x - real_x, "inf");
-	   rel_error = abs_error / norm(real_x, "inf");
+	   abs_error = norm(x - prev_x, "inf");
+	   rel_error = abs_error / norm(prev_x, "inf");
 	   prev_x = x;
 	   iter += 1;
 	 until ( rel_error < RTOL)
 endfunction
-	     
-	 
 	     
