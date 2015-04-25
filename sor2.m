@@ -1,6 +1,7 @@
-function [x, iter] = sor(A, b, w, RTOL)
+function [x, iter] = sor2(A, b, w, RTOL)
 	 n = rows(A);
 	 x = prev_x = zeros(n,1);
+	 prev_x(n) = 1;
 	 real_x = ones(n,1);
 	 iter = 0;
 	 do

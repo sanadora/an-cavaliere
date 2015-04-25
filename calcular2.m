@@ -10,8 +10,6 @@ function result = calcular2(n, RTOL)
 	i = 1;
 	do
 		[x, iter] = sor2(A, b, w, RTOL);
-		disp("iteraciones:");
-		disp(iter);
 		result(i,:) = [w, iter];
 		i += 1;
 		w += 0.1;
