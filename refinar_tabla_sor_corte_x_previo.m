@@ -1,4 +1,4 @@
-function result = refinar2(n, RTOL, w)
+function result = refinar_tabla_sor_corte_x_previo(n, RTOL, w)
   A = hilb(n);
   b = zeros(n,1);
   for i = 1:n;
@@ -11,7 +11,7 @@ function result = refinar2(n, RTOL, w)
   i = 1;
   w = w_start;
   do
-    [iter, x] = sor2(A, b, w, RTOL);
+    [iter, x] = sor_corte_x_previo(A, b, w, RTOL);
     result(i,:) = [w, iter, x];
     i += 1;
     w += step;

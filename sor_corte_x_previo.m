@@ -1,4 +1,4 @@
-function [iter, x] = sor2(A, b, w, RTOL)
+function [iter, x] = sor_corte_x_previo(A, b, w, RTOL)
   n = rows(A);
   x = prev_x = zeros(n,1);
   real_x = ones(n,1);

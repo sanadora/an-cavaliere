@@ -39,8 +39,8 @@ disp("Punto d realizado")
 #############
 ## PUNTO E ##
 #############
-e = calcular2(5, 0.0001);
-e_refinada = refinar2(5, 0.0001, mejor_w(e));
+e = tabla_sor_corte_x_previo(5, 0.0001);
+e_refinada = refinar_tabla_sor_corte_x_previo(5, 0.0001, mejor_w(e));
 save tablas_e.mat e e_refinada
 graficar(e_refinada, "Omega optimo para n=5 y RTOL=0.0001 con criterio de corte: X anterior");
 print e_refinada.png;
