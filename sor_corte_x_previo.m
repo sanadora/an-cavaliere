@@ -1,9 +1,10 @@
-function [iter, x] = sor(A, b, w, RTOL)
+function [iter, x] = sor2(A, b, w, RTOL)
   n = rows(A);
   x = prev_x = zeros(n,1);
   real_x = ones(n,1);
   iter = 0;
   do
+    iter += 1;
     for i = 1:n;
       sum = 0;
       for j = 1:n;
@@ -13,13 +14,15 @@ function [iter, x] = sor(A, b, w, RTOL)
       endfor
       x(i) = (1 - w) * x(i) + (w/A(i,i)) * (b(i) - sum);
     endfor
-    abs_error = norm(x - real_x, "inf");
-    rel_error = abs_error / norm(real_x, "inf");
+
+    abs_error = norm(x - prev_x, "inf");
+    if (iter > 1)
+      rel_error = abs_error / norm(prev_x, "inf");
+    else
+	rel_error = 10;
+    endif
     prev_x = x;
-    iter += 1;
   until ( rel_error < RTOL)
   x = x';
 endfunction
-	     
-	 
 	     
