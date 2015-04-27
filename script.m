@@ -4,9 +4,9 @@
 ## b = tabla_sor(5, 0.0001);
 ## b_refinada = refinar_tabla_sor(5, 0.0001, mejor_w(b));
 ## save tablas_b.mat b b_refinada
-## graficar(b, "Omega optimo para n=5 y RTOL=0.001");
+## graficar(b, "Omega optimo para n=5 y RTOL=0.0001");
 ## print b.png;
-## graficar(b_refinada, "Omega optimo para n=5 y RTOL=0.001");
+## graficar(b_refinada, "Omega optimo para n=5 y RTOL=0.0001");
 ## print b_refinada.png;
 ## disp("Punto b realizado")
 
