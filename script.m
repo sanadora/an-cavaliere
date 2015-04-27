@@ -1,34 +1,34 @@
-#############
-## PUNTO B ##
-#############
-b = tabla_sor(5, 0.0001);
-b_refinada = refinar_tabla_sor(5, 0.0001, mejor_w(b));
-save tablas_b.mat b b_refinada
-graficar(b, "Omega optimo para n=5 y RTOL=0.001");
-print b.png;
-graficar(b_refinada, "Omega optimo para n=5 y RTOL=0.001");
-print b_refinada.png;
-disp("Punto b realizado")
+## #############
+## ## PUNTO B ##
+## #############
+## b = tabla_sor(5, 0.0001);
+## b_refinada = refinar_tabla_sor(5, 0.0001, mejor_w(b));
+## save tablas_b.mat b b_refinada
+## graficar(b, "Omega optimo para n=5 y RTOL=0.001");
+## print b.png;
+## graficar(b_refinada, "Omega optimo para n=5 y RTOL=0.001");
+## print b_refinada.png;
+## disp("Punto b realizado")
 
 
-#############
-## PUNTO C ##
-#############
-c1 = tabla_sor(5, 0.00001);
-c1_refinada = refinar_tabla_sor(5, 0.00001, mejor_w(c1));
-c2 = tabla_sor(5, 0.001);
-c2_refinada = refinar_tabla_sor(5, 0.001, mejor_w(c2));
-save tablas_c.mat c1 c1_refinada c2 c2_refinada
+## #############
+## ## PUNTO C ##
+## #############
+## c1 = tabla_sor(5, 0.00001);
+## c1_refinada = refinar_tabla_sor(5, 0.00001, mejor_w(c1));
+## c2 = tabla_sor(5, 0.001);
+## c2_refinada = refinar_tabla_sor(5, 0.001, mejor_w(c2));
+## save tablas_c.mat c1 c1_refinada c2 c2_refinada
 
-graficar(c1, "Omega optimo para n=5 y RTOL=0.00001");
-print c1.png;
-graficar(c1_refinada, "Omega optimo para n=5 y RTOL=0.00001");
-print c1_refinada.png;
-graficar(c2, "Omega optimo para n=5 y RTOL=0.001");
-print c2.png;
-graficar(c2_refinada, "Omega optimo para n=5 y RTOL=0.001");
-print c2_refinada.png;
-disp("Punto c realizado")
+## graficar(c1, "Omega optimo para n=5 y RTOL=0.00001");
+## print c1.png;
+## graficar(c1_refinada, "Omega optimo para n=5 y RTOL=0.00001");
+## print c1_refinada.png;
+## graficar(c2, "Omega optimo para n=5 y RTOL=0.001");
+## print c2.png;
+## graficar(c2_refinada, "Omega optimo para n=5 y RTOL=0.001");
+## print c2_refinada.png;
+## disp("Punto c realizado")
 
 
 #############
@@ -44,13 +44,13 @@ print d_refinada.png;
 disp("Punto d realizado")
 
 
-#############
-## PUNTO E ##
-#############
-e = tabla_sor_corte_x_previo(5, 0.0001);
-e_refinada = refinar_tabla_sor_corte_x_previo(5, 0.0001, mejor_w(e));
-save tablas_e.mat e e_refinada
-graficar(e, "Omega optimo para n=5 y RTOL=0.0001 con criterio de corte: X anterior");
-print e.png;
-graficar(e_refinada, "Omega optimo para n=5 y RTOL=0.0001 con criterio de corte: X anterior");
-print e_refinada.png;
+## #############
+## ## PUNTO E ##
+## #############
+## e = tabla_sor_corte_x_previo(5, 0.0001);
+## e_refinada = refinar_tabla_sor_corte_x_previo(5, 0.0001, mejor_w(e));
+## save tablas_e.mat e e_refinada
+## graficar(e, "Omega optimo para n=5 y RTOL=0.0001 con criterio de corte: X anterior");
+## print e.png;
+## graficar(e_refinada, "Omega optimo para n=5 y RTOL=0.0001 con criterio de corte: X anterior");
+## print e_refinada.png;
